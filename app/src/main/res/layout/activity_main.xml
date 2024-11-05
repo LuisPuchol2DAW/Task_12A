@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="24sp">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="100dp" />
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="340sp"
-        android:layout_height="80sp"
-        android:layout_gravity="center"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="60sp"
         android:backgroundTint="#001EFF"
         android:elevation="0dp"
         android:padding="0dp"
         android:text="Toast"
         android:textStyle="bold"
-        app:cornerRadius="0dp"/>
+        app:cornerRadius="0dp" />
 
+    <Button
+        android:id="@+id/button_counter"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_toast"
+        android:layout_marginStart="60sp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#001EFF"
+        android:elevation="0dp"
+        android:padding="0dp"
+        android:text="Counter"
+        android:textStyle="bold"
+        app:cornerRadius="0dp" />
 
     <TextView
         android:id="@+id/tvcounter"
-        android:layout_width="340sp"
-        android:layout_height="454dp"
-        android:layout_gravity="center"
+        android:layout_width="129dp"
+        android:layout_height="226dp"
+        android:layout_toEndOf="@id/button_counter"
+        android:layout_marginTop="80sp"
         android:background="#DEFF00"
         android:elevation="0dp"
         android:fontFamily="sans-serif"
@@ -38,19 +49,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#001EFF"
-        android:textSize="230sp"
+        android:textSize="80sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button_counter"
-        android:layout_width="340sp"
-        android:layout_height="80sp"
-        android:layout_gravity="center"
-        android:backgroundTint="#001EFF"
-        android:elevation="0dp"
-        android:padding="0dp"
-        android:text="Counter"
-        android:textStyle="bold"
-        app:cornerRadius="0dp"/>
-
-</LinearLayout>
+</RelativeLayout>
