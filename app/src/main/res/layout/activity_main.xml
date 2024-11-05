@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24sp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="340sp"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#001EFF"
+        android:elevation="0dp"
+        android:padding="0dp"
+        android:text="Toast"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+
+    <TextView
+        android:id="@+id/tvcounter"
+        android:layout_width="340sp"
+        android:layout_height="454dp"
+        android:layout_gravity="center"
+        android:background="#DEFF00"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#001EFF"
+        android:textSize="230sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_counter"
+        android:layout_width="340sp"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#001EFF"
+        android:elevation="0dp"
+        android:padding="0dp"
+        android:text="Counter"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+</LinearLayout>
